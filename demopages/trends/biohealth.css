@@ -77,7 +77,7 @@ a:not(.wikipedia) {
 }
 
 a:not(.wikipedia):hover {
-  background-color: #f0ad4e;
+  background-color: #ffc107;
 }
 
 footer {

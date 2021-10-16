@@ -2,7 +2,7 @@
 
 *{
     font-family: "Rubik", serif;
-    color: #f0ad4e;
+    color: #ffc107;
     font-size: 20px;
     line-height: 40px;
     align-content: center;
@@ -20,7 +20,7 @@ body {
     color: #292b2c;
   }
   h1 {
-    color: #f0ad4e;
+    color: #ffc107;
     letter-spacing: 2px;
     font-weight: 700;
     text-align: center;
@@ -83,7 +83,7 @@ body {
   }
 
   footer, a {
-    color: #f0ad4e;
+    color: #ffc107;
     width: 100%;
     text-align: center;
     padding-top: 25px;
@@ -99,7 +99,7 @@ body {
     text-decoration: none;
   }
   .btn:hover {
-    background: #f0ad4e;
+    background: #ffc107;
     color: #f7f7f7;
     transition: 0.3s;
   }
