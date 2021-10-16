@@ -44,7 +44,7 @@ p {
   font-size: 50px;
   font-weight: bolder;
   padding-bottom: 10px;
-  border-bottom: 3px solid #222;
+  border-bottom: 3px solid #292b2c;
 }
 
 .items {
@@ -68,7 +68,7 @@ a:not(.website) {
   margin: 0px;
   display: flex;
   justify-content: center;
-  background-color:#222;
+  background-color:#292b2c;
   color: white;
   padding: 10px;
   transition: 0.3s;
@@ -77,11 +77,11 @@ a:not(.website) {
 }
 
 a:not(.website):hover {
-  background-color: rgb(97, 97, 97);
+  background-color: #f0ad4e;
 }
 
 footer {
-  color: #222;
+  color: #292b2c;
   width: 100%;
   text-align: center;
   padding-top: 25px;

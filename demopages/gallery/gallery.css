@@ -45,9 +45,10 @@
   margin: 20px;
 }
 
-h4 {
+h3, h4 {
     font-size: 24px;
     font-weight: 700;
+    color: #f0ad4e;
   }
 
 a {
