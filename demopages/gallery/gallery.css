@@ -81,6 +81,18 @@ a:hover {
     background: #f0ad4e;
 }
 
+.btn {
+  border: solid 2px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #f0ad4e;
+  color: #f7f7f7;
+  transition: 0.3s;
+}
+
 @media only screen and (max-width: 643px) {
 .container .heading {
   width: 100%;
