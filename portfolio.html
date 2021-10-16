@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="map.css">
 </head>
 
 <body>
@@ -104,9 +106,12 @@
                         <div class="col-lg-12 d-flex align-items-center">
                             <a href="#" class="btn px-3 btn-warning me-5">Download CV</a>
                             <div class="social-links">
-                                <a href="https://www.facebook.com/jace.RNS/" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
-                                <a href="https://twitter.com/aranascarls" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/aranxz/" class="text-dark me-2"><i class="fab fa-instagram"></i></a>                               
+                                <a href="https://www.facebook.com/jace.RNS/" class="text-dark me-2"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/aranascarls" class="text-dark me-2"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/aranxz/" class="text-dark me-2"><i
+                                        class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -374,7 +379,8 @@
                     <h2 class="fs-1 text-dark mb-4">Demo pages I have created</h2>
                     <a href="demopages/tribute/tribute.html" class="btn btn-outline-warning">Tribute Page</a>
                     <a href="demopages/gallery/gallery.html" class="btn btn-outline-warning">Trends Gallery Page</a>
-                    <a href="#demopages/restaurant/myrestaurant.html" class="btn btn-outline-warning">Restaurant Page</a>
+                    <a href="#demopages/restaurant/myrestaurant.html" class="btn btn-outline-warning">Restaurant
+                        Page</a>
                     <a href="#contact" class="btn btn-outline-warning">Tribute Page</a>
                 </div>
             </div>
@@ -382,96 +388,120 @@
     </section>
     <!--Demopages End-->
 
-    <!--Contact Start-->
-    <section class="contact py-5" id="contact">
-        <div class="container-lg py-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5">Contact Me</h2>
+    <!--Map start-->
+    <section class="p-5">
+        <section class="contact py-5" id="contact">
+            <div class="container-lg py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h2 class="fw-bold mb-5">Contact Me</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-warning">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h3 class="fs-5">Email</h3>
+                                <p class="text-muted">jaranas_200000001272@uic.edu.ph</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-warning">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h3 class="fs-5">Phone</h3>
+                                <p class="text-muted">+63 915 819 7933</p>
+                            </div>
+                        </div>
+                        <div class="contact-item d-flex mb-3">
+                            <div class="icon fs-4 text-warning">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="text ms-3">
+                                <h3 class="fs-5">Visit Address</h3>
+                                <p class="text-muted">Nova Tierra Village, Lanang, Davao City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div id="map"></div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-warning">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5">Email</h3>
-                            <p class="text-muted">jaranas_200000001272@uic.edu.ph</p>
-                        </div>
-                    </div>
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-warning">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5">Phone</h3>
-                            <p class="text-muted">+63 915 819 7933</p>
-                        </div>
-                    </div>
-                    <div class="contact-item d-flex mb-3">
-                        <div class="icon fs-4 text-warning">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="text ms-3">
-                            <h3 class="fs-5">Visit Address</h3>
-                            <p class="text-muted">125 Nagimit St. Nova Tierra Village, Lanang, Davao City</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="contact-form">
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6 mb-4">
-                                    <input type="text" placeholder="Your Name"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <input type="text" placeholder="Your Email"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 mb-4">
-                                    <input type="text" placeholder="Subject"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 mb-4">
-                                    <textarea rows="5" placeholder="Your Message"
-                                        class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" class="btn btn-warning px-3">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Contact End-->
+        </section>
+        <!--Map end-->
 
-    <!--footer start-->
-    <footer class="footer border-top py-4">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="m-0 text-center text-muted">&copy; 2021 cucciproductions</p>
+        <!--Contact Start-->
+        <section class="contact py-5" id="contact">
+            <div class="container-lg py-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <div class="contact-form justify-content-center">
+                            <form>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 mb-4">
+                                        <input type="text" placeholder="Your Name"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                    <div class="col-lg-6 mb-4">
+                                        <input type="text" placeholder="Your Email"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <input type="text" placeholder="Subject"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <textarea rows="5" placeholder="Your Message"
+                                            class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 mb-4">
+                                        <button type="submit" class="btn btn-warning px-3 justify-content-center">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!--footer end-->
-    <script src="js/bootstrap.bundle.min.js"></script>
+        </section>
+        <!--Contact End-->
+
+        <!--footer start-->
+        <footer class="footer border-top py-4">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="m-0 text-center text-muted">&copy; 2021 cucciproductions</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibmVla2FoaGhoIiwiYSI6ImNrdTJ1b2FkdjRhNzQycHAzbjZvaWNiM3YifQ.ynz5SzNj1OqZjdYjSdceKA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [125.637881, 7.113320],
+                zoom: 18,
+            });
+        </script>
 </body>
 
 </html>
