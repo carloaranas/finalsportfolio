@@ -73,7 +73,8 @@ button {
 }
 
 button:hover {
-    background-color: #ffc107;
+    background-color: #292b2c;
+    color: #f7f7f7;
 }
 
 h1{
@@ -82,3 +83,19 @@ h1{
     border-bottom: 5px solid #292b2c;
     line-height: 60px;
 }
+
+.btn {
+    border: solid 2px #f7f7f7;
+    background: #ffc107;
+    color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .btn:hover {
+    background: #292b2c;
+    color: #f7f7f7;
+    transition: 0.3s;
+    border: solid 2px #292b2c;
+  }
