@@ -1,0 +1,24 @@
+{
+  "name": "finalsportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloaranas/finalsportfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloaranas/finalsportfolio/issues"
+  },
+  "homepage": "https://github.com/carloaranas/finalsportfolio#readme",
+  "dependencies": {
+    "http-server": "^13.0.2"
+  }
+}
